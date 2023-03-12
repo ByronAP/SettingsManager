@@ -5,8 +5,27 @@
     <Title>SettingsManager</Title>
     <Authors>ByronAP</Authors>
     <Description>A simple way to store and retrieve settings in .NET.</Description>
-    <Copyright>2023 ByronAP</Copyright>
+    <Copyright>Copyright © 2023 ByronAP</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/ByronAP/SettingsManager</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ByronAP/SettingsManager</PackageProjectUrl>
+    <PackageIcon>settingsmanager-logo.png</PackageIcon>
+    <PackageTags>settings;user settings;properties;.net;core;crossplatform</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReleaseNotes>See repository</PackageReleaseNotes>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\settingsmanager-logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
